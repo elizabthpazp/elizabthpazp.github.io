@@ -10,7 +10,7 @@
 			itemSelector:".grid-item",percentPosition:true,animationOptions:{duration:500,easing:"zoom-in"},masonry:{columnWidth:".grid-item"},transitionDuration:".9s"})});
 		a(".slide-happyclint").owlCarousel({autoPlay:true,slideSpeed:5000,pagination:false,navigation:true,items:1,navigationText:["<i class='flaticon-left-arrow'></i>","<i class='flaticon-right-arrow'></i>"],itemsDesktop:[1199,1],itemsDesktopSmall:[980,1],itemsTablet:[768,1],itemsMobile:[479,1],});
 		a(".slide-testimonai.owlCarousel").owlCarousel({autoPlay:false,slideSpeed:5000,pagination:false,navigation:false,items:1,navigationText:["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"],itemsDesktop:[1199,1],itemsDesktopSmall:[980,1],itemsTablet:[768,1],itemsMobile:[479,1],});
-		a(".element").typed({strings:["Elizabeth de la Paz","Programmer Engineer","From Cuba"],typeSpeed:10,loop:true,backDelay:2000});
+		a(".element").typed({strings:["Elizabeth de la Paz","Software Engineer","Freelancer"],typeSpeed:10,loop:true,backDelay:2000});
        
 	   	// Contact form
 	var form = $('#main-contact-form');
@@ -38,7 +38,7 @@
 		a("#bar7").barfiller({barColor:"purple",duration:3000});
 		a("#bar8").barfiller({barColor:"purple",duration:2000});
 		a("#bar9").barfiller({barColor:"purple",duration:4000});
-		a("#bar10").barfiller({barColor:"purple",duration:4000})});
+		a("#bar10").barfiller({barColor:"purple",duration:4000})}); 
 	
 		
         
