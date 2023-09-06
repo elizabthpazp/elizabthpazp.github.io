@@ -24,7 +24,7 @@
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
+    bottom: 85px;
     right: 40px;
     background-color: gray;
     color: #FFF;
@@ -142,31 +142,34 @@
   background-image: url('../images/portfolio/a1.jpg');
 }
 .card:nth-child(4):before {
+  background-image: url('../images/portfolio/sierram.jpg');
+}
+.card:nth-child(5):before {
   background-image: url('../images/portfolio/frases.jpg');
 }
 
-.card:nth-child(5):before {
+.card:nth-child(6):before {
   background-image: url('../images/portfolio/edit0.jpg');
 }
-.card:nth-child(6):before {
+.card:nth-child(7):before {
   background-image: url('../images/portfolio/calcc.jpg');
 }
-.card:nth-child(7):before {
+.card:nth-child(8):before {
   background-image: url('../images/portfolio/cajaa.jpg');
 }
-.card:nth-child(8):before {
+.card:nth-child(9):before {
   background-image: url('../images/portfolio/relojj.jpg');
 }
-.card:nth-child(10):before {
+.card:nth-child(11):before {
   background-image: url('../images/portfolio/edition.jpg');
 }
-.card:nth-child(11):before {
+.card:nth-child(12):before {
   background-image: url('../images/portfolio/photo.jpg');
 }
-.card:nth-child(12):before {
+.card:nth-child(13):before {
   background-image: url('../images/portfolio/design.jpg');
 }
-.card:nth-child(9):before {
+.card:nth-child(10):before {
   background-image: url('../images/portfolio/chat.jpg');
 }
 
@@ -248,4 +251,16 @@
   
   
  
+}
+
+@media screen and (min-width: 991px) {
+.top-services{
+	margin-top:-210px;
+}
+}
+
+@media screen and (max-width: 991px) {
+.btn-services{
+	margin-bottom:150px;
+}
 }
