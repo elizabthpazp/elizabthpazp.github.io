@@ -45,6 +45,26 @@
 .my-float {
     margin-top: 16px;
 }
+
+.skills-btn{
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-radius:25px;
+	font-weight:1000;
+	max-width:150px;
+	border-color: #800080;
+	border-width:5px;
+	border: solid #800080 5px; 
+	background-color:#cdcdcd;
+	white-space:nowrap;
+	width:100% auto;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:5px;
+	margin-left:5px;
+} 
+ 
 /*=================================================    13. google-map-area==============================================================*/
  .google-map-area {  overflow: hidden;  margin-top: 30px; } 
 
