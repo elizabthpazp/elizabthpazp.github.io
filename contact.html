@@ -21,7 +21,7 @@
 <div class="from-title"><h3>Let's Keep in Touch</h3></div>
 <div class="from-area">
  <div class="status alert alert-success" style="display: none; color:white"></div>
-<form class="contact-form" id="main-contact-form" method="post" action="sendemail.php" name="main-contact-form">
+<form class="contact-form" id="main-contact-form" method="post" action="sendEmail()" name="main-contact-form">
 <div class="form-group">
 <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name"></div>
 
@@ -29,7 +29,7 @@
 <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email address "></div>
 <div class="form-group"><textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write your message"></textarea></div>
 <div class="submit-btn text-right">
-<button class="btn" style="background-color: gray" type="submit" name="submit" id="submit">Submit</button></div>
+<button class="btn" style="background-color: gray" type="submit" name="submit" id="submit" onclick="sendEmail()">Submit</button></div>
 </form></div>
 
 
@@ -64,6 +64,30 @@
 var currentTime = new Date();
 var year = currentTime.getFullYear();
 document.getElementById('anoP').innerHTML+=year +" ";
+ 
+  async function sendEmail(){
+  
+ console.log('entraaa');
+ await fetch('https://api.resend.com/emails', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer re_FzdR7e3c_9sqnCqVvkYUxjM7Za4nJ2oXd',
+    'Content-Type': 'application/json'
+  },
+  // body: '{\n    "from": "onboarding@resend.dev",\n    "to": "elizabethpazp695@gmail.com",\n    "subject": "Mensaje desde mi web elizabthpazp.github.io",\n    "html": "<p>Message sent successfully, you will receive a response soon, thank you!</p>"\n  }',
+  body: JSON.stringify({
+    'from': 'onboarding@resend.dev',
+    'to': 'elizabethpazp695@gmail.com',
+    'subject': 'Mensaje desde mi web elizabthpazp.github.io',
+    'html': '<p>Message sent successfully, you will receive a response soon, thank you!</p>'
+  })
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(function (error) {
+    console.log("Hubo un problema con la petición Fetch:" + error.message);
+  });
+}
 
 </script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="elizabethpH" data-description="Support me on Buy me a coffee!" data-color="#BD5FFF" data-position="Right" data-x_margin="19" data-y_margin="15"></script>
