@@ -59,6 +59,9 @@
 <li><a href="https://www.tiktok.com/@elizabthpazp" target="_blank">
 <i class="fab fa-tiktok"></i></a></li>
 </ul></div></div></div></div></div></footer><!-- footer area end here --><!-- js file start -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js" integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script>
 
 var currentTime = new Date();
@@ -68,25 +71,48 @@ document.getElementById('anoP').innerHTML+=year +" ";
   async function sendEmail(){
   
  console.log('entraaa');
- await fetch('https://api.resend.com/emails', {
-  method: 'POST',
+  
+const emailData = {
+  from: 'onboarding@resend.dev',
+  to: 'elizabethpazp695@gmail.com',
+  subject: 'Mensaje desde mi web elizabthpazp.github.io',
+  html: '<p>Message sent successfully, you will receive a response soon, thank you!</p>',
+};
+
+const apiUrl = 'https://api.resend.com/emails';
+
+axios.post(apiUrl, emailData, {
   headers: {
-    'Authorization': 'Bearer re_FzdR7e3c_9sqnCqVvkYUxjM7Za4nJ2oXd',
-    'Content-Type': 'application/json'
+    Authorization: 'Bearer re_FzdR7e3c_9sqnCqVvkYUxjM7Za4nJ2oXd',
+    'Content-Type': 'application/json',
   },
-  // body: '{\n    "from": "onboarding@resend.dev",\n    "to": "elizabethpazp695@gmail.com",\n    "subject": "Mensaje desde mi web elizabthpazp.github.io",\n    "html": "<p>Message sent successfully, you will receive a response soon, thank you!</p>"\n  }',
-  body: JSON.stringify({
-    'from': 'onboarding@resend.dev',
-    'to': 'elizabethpazp695@gmail.com',
-    'subject': 'Mensaje desde mi web elizabthpazp.github.io',
-    'html': '<p>Message sent successfully, you will receive a response soon, thank you!</p>'
-  })
 })
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(function (error) {
-    console.log("Hubo un problema con la petición Fetch:" + error.message);
+  .then(response => {
+    console.log('Email sent successfully:', response.data);
+  })
+  .catch(error => {
+    console.error('Error sending email:', error);
   });
+ 
+ <!-- await fetch('https://api.resend.com/emails', { -->
+  <!-- method: 'POST', -->
+  <!-- headers: { -->
+    <!-- 'Authorization': 'Bearer re_FzdR7e3c_9sqnCqVvkYUxjM7Za4nJ2oXd', -->
+    <!-- 'Content-Type': 'application/json' -->
+  <!-- }, -->
+  <!-- // body: '{\n    "from": "onboarding@resend.dev",\n    "to": "elizabethpazp695@gmail.com",\n    "subject": "Mensaje desde mi web elizabthpazp.github.io",\n    "html": "<p>Message sent successfully, you will receive a response soon, thank you!</p>"\n  }', -->
+  <!-- body: JSON.stringify({ -->
+    <!-- 'from': 'onboarding@resend.dev', -->
+    <!-- 'to': 'elizabethpazp695@gmail.com', -->
+    <!-- 'subject': 'Mensaje desde mi web elizabthpazp.github.io', -->
+    <!-- 'html': '<p>Message sent successfully, you will receive a response soon, thank you!</p>' -->
+  <!-- }) -->
+<!-- }) -->
+<!-- .then(response => response.json()) -->
+<!-- .then(data => console.log(data)) -->
+<!-- .catch(function (error) { -->
+    <!-- console.log("Hubo un problema con la petición Fetch:" + error.message); -->
+  <!-- }); -->
 }
 
 </script>
