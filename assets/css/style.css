@@ -152,56 +152,60 @@
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
-.card:nth-child(2):before {
-  background-image: url('../images/portfolio/4.jpg');
-}
+
 .card:nth-child(1):before {
   background-image: url('../images/portfolio/cw11.jpg');
 }
+.card:nth-child(2):before {
+  background-image: url('../images/portfolio/4.jpg');
+}
 .card:nth-child(3):before {
-  background-image: url('../images/portfolio/a1.jpg');
+  background-image: url('../images/portfolio/blog.png');
 }
 .card:nth-child(4):before {
-  background-image: url('../images/portfolio/sierram.jpg');
+  background-image: url('../images/portfolio/a1.jpg');
 }
 .card:nth-child(5):before {
+  background-image: url('../images/portfolio/sierram.jpg');
+}
+.card:nth-child(6):before {
   background-image: url('../images/portfolio/frases.jpg');
 }
 
-.card:nth-child(6):before {
+.card:nth-child(7):before {
   background-image: url('../images/portfolio/edit0.jpg');
 }
-.card:nth-child(7):before {
+.card:nth-child(8):before {
   background-image: url('../images/portfolio/calcc.jpg');
 }
-.card:nth-child(8):before {
+.card:nth-child(9):before {
   background-image: url('../images/portfolio/cajaa.jpg');
 }
-.card:nth-child(9):before {
+.card:nth-child(10):before {
   background-image: url('../images/portfolio/relojj.jpg');
 }
-.card:nth-child(10):before {
+.card:nth-child(11):before {
   background-image: url('../images/portfolio/logo tt.jpg');
 }
-.card:nth-child(11):before {
+.card:nth-child(12):before {
   background-image: url('../images/portfolio/logo ig.jpg');
 }
-.card:nth-child(12):before {
+.card:nth-child(13):before {
   background-image: url('../images/portfolio/atropos.png');
 }
-.card:nth-child(13):before {
+.card:nth-child(14):before {
   background-image: url('../images/portfolio/filters.jpg');
 }
-.card:nth-child(14):before {
+.card:nth-child(15):before {
   background-image: url('../images/portfolio/chat.jpg');
 }
-.card:nth-child(15):before {
+.card:nth-child(16):before {
   background-image: url('../images/portfolio/edition.jpg');
 }
-.card:nth-child(16):before {
+.card:nth-child(17):before {
   background-image: url('../images/portfolio/photo.jpg');
 }
-.card:nth-child(17):before {
+.card:nth-child(18):before {
   background-image: url('../images/portfolio/design.jpg');
 }
 
