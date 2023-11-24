@@ -197,15 +197,24 @@
   background-image: url('../images/portfolio/filters.jpg');
 }
 .card:nth-child(15):before {
-  background-image: url('../images/portfolio/chat.jpg');
+  background-image: url('../images/portfolio/notification.png');
 }
 .card:nth-child(16):before {
-  background-image: url('../images/portfolio/edition.jpg');
+  background-image: url('../images/portfolio/animation.png');
 }
 .card:nth-child(17):before {
-  background-image: url('../images/portfolio/photo.jpg');
+  background-image: url('../images/portfolio/decoration.png');
 }
 .card:nth-child(18):before {
+  background-image: url('../images/portfolio/chat.jpg');
+}
+.card:nth-child(19):before {
+  background-image: url('../images/portfolio/edition.jpg');
+}
+.card:nth-child(20):before {
+  background-image: url('../images/portfolio/photo.jpg');
+}
+.card:nth-child(21):before {
   background-image: url('../images/portfolio/design.jpg');
 }
 
