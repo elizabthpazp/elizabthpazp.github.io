@@ -206,15 +206,21 @@
   background-image: url('../images/portfolio/decoration.png');
 }
 .card:nth-child(18):before {
-  background-image: url('../images/portfolio/chat.jpg');
+  background-image: url('../images/portfolio/christmas.png');
 }
 .card:nth-child(19):before {
-  background-image: url('../images/portfolio/edition.jpg');
+  background-image: url('../images/portfolio/newyear.png');
 }
 .card:nth-child(20):before {
-  background-image: url('../images/portfolio/photo.jpg');
+  background-image: url('../images/portfolio/chat.jpg');
 }
 .card:nth-child(21):before {
+  background-image: url('../images/portfolio/edition.jpg');
+}
+.card:nth-child(22):before {
+  background-image: url('../images/portfolio/photo.jpg');
+}
+.card:nth-child(23):before {
   background-image: url('../images/portfolio/design.jpg');
 }
 
