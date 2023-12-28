@@ -7,7 +7,7 @@
 .service-area .service-info .inner-content .service-info-title h2 {    font-size: 30px;    font-weight: 700;    color: #ffffff;    margin-top: 0px;    text-transform: capitalize;    margin-bottom: 20px; }  
 .service-area .service-info .inner-content .service-content p {    color: #ffffff;    font-size: 16px;    line-height: 26px;    margin-bottom: 0px; } 
  .service-area .service-info .btn-list {    margin-top: 38px; }    
- .service-area .service-info .btn-list .btn {      display: inline-block;      padding: 8px 20px;      font-size: 16px;      font-weight: 400;      color: v;      background: rgba(0, 0, 0, 0.2);      -webkit-border-radius: 30px;      -moz-border-radius: 30px;      -ms-border-radius: 30px;      -o-border-radius: 30px;      border-radius: 30px;      margin-right: 15px;      -webkit-transition: all 0.5s;      -o-transition: all 0.5s;      -moz-transition: all 0.5s;      -ms-transition: all 0.5s;      transition: all 0.5s; }    
+ .service-area .service-info .btn-list .btn {          padding: 8px 20px;      font-size: 16px;      font-weight: 400;      color: v;      background: rgba(0, 0, 0, 0.2);      -webkit-border-radius: 30px;      -moz-border-radius: 30px;      -ms-border-radius: 30px;      -o-border-radius: 30px;      border-radius: 30px;      margin-right: 15px;      -webkit-transition: all 0.5s;      -o-transition: all 0.5s;      -moz-transition: all 0.5s;      -ms-transition: all 0.5s;      transition: all 0.5s; }    
  .service-area .service-info .btn-list .btn:hover {        background: purple; }
  .service-area .service-list .single-service {  background: rgba(0, 0, 0, 0.2);  padding: 25px 20px;  -webkit-transition: all 0.5s;  -o-transition: all 0.5s;  -moz-transition: all 0.5s;  -ms-transition: all 0.5s;  transition: all 0.5s; } 
  .service-area .service-list .single-service:hover {    background: purple; } 
@@ -43,7 +43,7 @@
     }
 
 .my-float {
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 .skills-btn{
