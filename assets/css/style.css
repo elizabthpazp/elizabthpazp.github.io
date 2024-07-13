@@ -162,67 +162,87 @@
 .card:nth-child(3):before {
   background-image: url('../images/portfolio/blog.png');
 }
+
 .card:nth-child(4):before {
+  background-image: url('../images/portfolio/pizzas.png');
+}
+
+.card:nth-child(5):before {
   background-image: url('../images/portfolio/a1.jpg');
 }
-.card:nth-child(5):before {
+.card:nth-child(6):before {
   background-image: url('../images/portfolio/sierram.jpg');
 }
-.card:nth-child(6):before {
+.card:nth-child(7):before {
   background-image: url('../images/portfolio/frases.jpg');
 }
 
-.card:nth-child(7):before {
+.card:nth-child(8):before {
   background-image: url('../images/portfolio/edit0.jpg');
 }
-.card:nth-child(8):before {
+.card:nth-child(9):before {
   background-image: url('../images/portfolio/calcc.jpg');
 }
-.card:nth-child(9):before {
+.card:nth-child(10):before {
   background-image: url('../images/portfolio/cajaa.jpg');
 }
-.card:nth-child(10):before {
+.card:nth-child(11):before {
   background-image: url('../images/portfolio/relojj.jpg');
 }
-.card:nth-child(11):before {
+.card:nth-child(12):before {
   background-image: url('../images/portfolio/logo tt.jpg');
 }
-.card:nth-child(12):before {
+.card:nth-child(13):before {
   background-image: url('../images/portfolio/logo ig.jpg');
 }
-.card:nth-child(13):before {
+.card:nth-child(14):before {
   background-image: url('../images/portfolio/atropos.png');
 }
-.card:nth-child(14):before {
+.card:nth-child(15):before {
   background-image: url('../images/portfolio/filters.jpg');
 }
-.card:nth-child(15):before {
+.card:nth-child(16):before {
   background-image: url('../images/portfolio/notification.png');
 }
-.card:nth-child(16):before {
+.card:nth-child(17):before {
   background-image: url('../images/portfolio/animation.png');
 }
-.card:nth-child(17):before {
+.card:nth-child(18):before {
   background-image: url('../images/portfolio/decoration.png');
 }
-.card:nth-child(18):before {
+.card:nth-child(19):before {
   background-image: url('../images/portfolio/christmas.png');
 }
-.card:nth-child(19):before {
+.card:nth-child(20):before {
   background-image: url('../images/portfolio/newyear.png');
 }
-.card:nth-child(20):before {
-  background-image: url('../images/portfolio/chat.jpg');
-}
 .card:nth-child(21):before {
-  background-image: url('../images/portfolio/edition.jpg');
+  background-image: url('../images/portfolio/loader.png');
 }
 .card:nth-child(22):before {
-  background-image: url('../images/portfolio/photo.jpg');
+  background-image: url('../images/portfolio/animations.png');
 }
 .card:nth-child(23):before {
+  background-image: url('../images/portfolio/masking.png');
+}
+
+.card:nth-child(24):before {
+  background-image: url('../images/portfolio/effects.png');
+}
+
+.card:nth-child(25):before {
+  background-image: url('../images/portfolio/chat.jpg');
+}
+.card:nth-child(26):before {
+  background-image: url('../images/portfolio/edition.jpg');
+}
+.card:nth-child(27):before {
+  background-image: url('../images/portfolio/photo.jpg');
+}
+.card:nth-child(28):before {
   background-image: url('../images/portfolio/design.jpg');
 }
+
 
 
 
