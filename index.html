@@ -55,7 +55,7 @@
 <nav><ul class="cd-primary-nav">
 <li><a href="index.html" class="active">Home</a></li><li><a href="resume.html" translate="no">Resume</a></li>
 <li><a href="portfolio.html" translate="no">Portfolio</a></li>
-<!--<li><a href="videos.html">Videos</a></li>-->
+<li><a href="videos.html">Videos</a></li>
 <li><a href="services.html">Services</a></li><li><a href="contact.html">Contact me</a></li>
 </ul></nav><div class="cd-overlay-nav"><span></span></div><!-- cd-overlay-nav -->
 <div class="cd-overlay-content"><span></span></div><!-- cd-overlay-content -->
@@ -66,7 +66,7 @@
 <div class="profile-inner text-center"><div class="profile-img">
 <img src="assets/images/profile/1.png" alt="profle"></div><div class="profile-name"><h1><span class="element" translate="no">Elizabeth de la Paz</span></h1></div>
 <div class="profile-profeson"><h4 class="cd-headline letters rotate-3" style="color: white" >Professional <span class="cd-words-wrapper" translate="no"><b class="is-visible">Front End</b><b>Developer</b><b>Designer</b></span></h4></div>
-<div class="profle-social"><div class="social-media"><ul><li><a href="https://www.instagram.com/elizabthpazp__/" target="_blank">
+<div class="profle-social"><div class="social-media"><ul><li><a href="https://www.instagram.com/elizabthpazp.js/" target="_blank">
 <i class="fa fa-instagram" ></i></a></li><li><a href="https://m.facebook.com/100006840368095/" target="_blank">
 <i class="fa fa-facebook" ></i></a></li><li><a href="https://t.me/elizabthpazp" target="_blank">
 <i class="fa fa-telegram"></i></a></li>
@@ -80,7 +80,7 @@
 <li><a href="https://discord.com/users/1062024233577893918" target="_blank">
 <i class="fab fa-discord"></i></a></li>
 
-<li><a href="https://www.tiktok.com/@elizabthpazp" target="_blank">
+<li><a href="https://www.tiktok.com/@elizabthpazp.js" target="_blank">
 <i class="fab fa-tiktok"></i></a></li>
 
 <li><a href="https://twitter.com/elizabthpazp" target="_blank">
@@ -114,7 +114,10 @@
  <tr><td> 
 <i class="fa fa-language"></i></td><td><span style="color: white">Languages</span></td><td><b>:</b></td><td>Español / English</td></tr>
 <tr><td><i class="flaticon-envelope"></i></td><td><span style="color: white">Email</span></td><td><b>:</b></td><td><a href="#">elizabethpazp695@gmail.com</a></td>
- </tr></tbody></table></div><div class="btn-list"><a href="assets/CV_delaPazElizabeth.pdf" class="btn">Download CV</a><!--<a href="https://paynest.app/elizabthpazp" class="btn ">Donate</a> -->
+ </tr></tbody></table></div>
+ <div class="btn-list"> 
+ <a href="https://cv-template-elizabthpazp.vercel.app/" target="_blank" class="btn" id="cvText">Free CV template!</a>
+ <!--<a href="https://paynest.app/elizabthpazp" class="btn ">Donate</a> -->
 <a href="https://www.buymeacoffee.com/elizabethpH" target="_blank" class="btn">Buy me a Pizza</a>
 </div></div></div>
 <br/><br/> 
@@ -134,13 +137,13 @@
 <footer class="footer-area"><div class="container"><div class="row">
 <div class="col-md-6"><div class="copyright-area" style="display:flex"><p id="anoP">&copy; </p> &nbsp;  &nbsp;  <a href="#" style="color: violet; margin-top:14px;font-size:16px" > elizabthpazp</a>  &nbsp; &nbsp; <p> All rights reserved.</p></div>
 </div><div class="col-md-6"><div class="footer-social text-right" style="margin-right:45px"><div class="social-media "><ul>
-<li><a href="https://www.instagram.com/elizabthpazp__/" target="_blank"><i class="fa fa-instagram" ></i></a></li><li><a target="_blank" href="https://m.facebook.com/100006840368095/"><i class="fa fa-facebook" ></i></a></li>
+<li><a href="https://www.instagram.com/elizabthpazp.js/" target="_blank"><i class="fa fa-instagram" ></i></a></li><li><a target="_blank" href="https://m.facebook.com/100006840368095/"><i class="fa fa-facebook" ></i></a></li>
 <li><a href="https://t.me/elizabthpazp" target="_blank">
 <i class="fa fa-telegram"></i></a></li><li><a target="_blank" href="https://www.linkedin.com/in/elizabeth-de-la-paz-portal-4b864b209"><i class="fa fa-linkedin" ></i></a></li><li><a target="_blank" href="https://github.com/elizabthpazp">
 <i class="fa fa-github"></i></a></li>
 <li><a href="https://discord.com/users/1062024233577893918" target="_blank">
 <i class="fab fa-discord"></i></a></li>
-<li><a href="https://www.tiktok.com/@elizabthpazp" target="_blank">
+<li><a href="https://www.tiktok.com/@elizabthpazp.js" target="_blank">
 <i class="fab fa-tiktok"></i></a></li>
 <li><a href="https://twitter.com/elizabthpazp" target="_blank">
 <i class="fab fa-twitter"></i></a></li>
@@ -162,7 +165,12 @@
 var currentTime = new Date();
 var year = currentTime.getFullYear();
 document.getElementById('anoP').innerHTML+=year +" ";
-
+ window.onload = function(){  
+const params = new URLSearchParams(window.location.search);
+          
+ document.getElementById("cvText").textContent = params.get('cv') === 'true' ? "Download CV" :  "Free CV template"; 
+  document.getElementById("cvText").href = params.get('cv') === 'true' ? "assets/CV_delaPazElizabeth.pdf" :  "https://cv-template-elizabthpazp.vercel.app"; 
+}
 </script>
 
 </body>
