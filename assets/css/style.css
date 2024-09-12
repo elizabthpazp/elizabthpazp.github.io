@@ -335,4 +335,13 @@
 .btn-services{
 	margin-bottom:150px;
 }
+.mt-books{
+margin-top:10px; 
 }
+.align-books{text-align:center;}
+}
+
+
+#miCV {
+            display: none; 
+        }
