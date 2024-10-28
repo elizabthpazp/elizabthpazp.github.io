@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/portfolio",
+      "destination": "/portfolio.html"
+    },
+	{
+      "source": "/resume",
+      "destination": "/resume.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html"
+    },
+	{
+      "source": "/videos",
+      "destination": "/videos.html"
+    }
+  ]
+}
